@@ -1,4 +1,4 @@
-/* __________ HELPER CLASSES, FOR SANITY __________ 
+/* __________ HELPER CLASSES, FOR SANITY __________
  */
 
 /* _____ TYPOGRAPHY _____ */
@@ -46,36 +46,9 @@
   @include alignments('desk-');
 }
 
-/* _____ COLORS _____ */
-.green {
-  color: $green;
-}
 
-.red {
-  color: $red;
-}
 
-.blue {
-  color: $blue;
-}
-
-.black {
-  color: $black;
-}
-
-.grey {
-  color: #CCC;
-}
-
-.dgrey {
-  color: #888;
-}
-
-.yellow {
-  color: $yellow;
-}
-
-// Clear-Fixes 
+// Clear-Fixes
 .clear {
   clear: both !important;
   display: block;
@@ -238,7 +211,7 @@ $floats: left right none;
 }
 
 /* Sticky */
-// Makes an #*_area stick 
+// Makes an #*_area stick
 // to top.
 .sticky {
   position: fixed;
@@ -249,89 +222,13 @@ $floats: left right none;
   @include box-shadow(rgba(0, 0, 0, 0.3) 0 1px 2px);
 }
 
-/* _____ INSTAMOJO LOGO _____ */ 
+/* _____ INSTAMOJO LOGO _____ */
 .brand {
   background: image-url('logo.png') no-repeat;
   display: block;
   text-indent: -9999px;
 }
 
-
-/* _____ COLOURED BACKGROUND AREAS _____ */
-.blue_area, .green_area, .black_area, .red_area {
-  color: $white;
-  a {
-    color: $white;
-    text-decoration: none;
-    border-bottom: 1px dotted $white;
-    &:hover {
-      border-bottom: 1px solid $white;
-      color: $white;
-    }
-    h1, h2, h3, h4, h5, h6 {
-      color: $white;
-    }
-  }
-  .nav a, a.btn a.btn-special{
-    text-decoration: none;
-    border-bottom: none;
-    &:hover {
-      text-decoration: none;
-      border-bottom: none;
-    }
-  }
-}
-
-.blue_area {
-  background: $blue;
-}
-
-.green_area {
-  background: $green;
-}
-
-.black_area {
-  background: $black;
-}
-
-.red_area {
-  background: adjust-lightness($red, -7%);
-}
-
-.grey_area {
-  background: $grey;
-}
-
-.egrey_area {
-  background: $egrey;
-}
-
-.yellow_area {
-  background: adjust-lightness(mix($yellow, $white), 10%);
-}
-
-
-// Special Classes
-.yellow_note {
-  @extend .yellow_area;
-  @extend .padded;
-  @extend .rounded;
-  border: 1px solid $yellow;
-}
-
-.blue_note {
-  background: adjust-lightness(mix($blue, $white), 15%);
-  @extend .padded;
-  @extend .rounded;
-  border: 1px solid mix($blue, $white);
-}
-
-.grey_note {
-  @extend .grey_area;
-  @extend .padded;
-  @extend .rounded;
-  border: 1px solid #CCC;
-}
 
 // Others
 .no-border {
@@ -345,20 +242,10 @@ $floats: left right none;
   }
 }
 
-
-.highlight {
-  background: adjust-lightness(mix($white, $yellow), 15);
-}
-
 .padded {
   padding: 1em;
 }
 
 .rounded {
   border-radius: 3px;
-}
-
-.loading {
-  min-height: 150px;
-  background: image-url('loader.gif') center center no-repeat;
 }
